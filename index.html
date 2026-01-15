@@ -67,6 +67,11 @@
   </style>
 
   <script type="module">
+     console.log("SCRIPT START ✅");
+  document.body.insertAdjacentHTML(
+    "afterbegin",
+    "<div style='padding:10px;background:#fffae6;font-weight:bold'>SCRIPT RUNNING ✅</div>"
+  );
     import { createClient } from "https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm";
 
     // 🔴 여기를 본인 Supabase 값으로 교체하세요
@@ -116,3 +121,4 @@
 
       const tbody = $("tbody");
       tbody.innerHTML = "";
+
